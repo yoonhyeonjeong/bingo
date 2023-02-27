@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.start-btn {
+  display: flex;
+  padding: 15px;
+  margin: 10px auto;
+  border: none;
+  border-radius: 16px;
+  cursor: pointer;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  background: #3581cf;
+}
+.bingo-wrap {
+  padding-top: 30px;
+}
+.bingo-btn {
+  cursor: pointer;
+  width: 20%;
+  display: inline-flex;
+  justify-content: center;
+  padding: 20px 0;
+  background: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  border: 1px solid #eee;
+  border-top: 0;
+}
+.bingo-btn + .bingo-btn {
+  border-right: 0;
+}
+.bingo-btn:first-child {
+  border-right: 0;
+}
+.bingo-btn:nth-child(5n) {
+  border-right: 1px solid #eee;
+}
+.bingo-btn:nth-child(-n + 5) {
+  border-top: 1px solid #eee;
+}
+.bingo-btn.active {
+  background: #111;
+  color: #fff;
+}
